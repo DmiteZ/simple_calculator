@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULADORA</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <div id="container" class="container__calculator">
+
+    <form id="content__calculator">
+      <h2>¿Qué operación desea realizar?</h2>
+
+      <div id="peticion">
+        <ol class="list_operation">
+          <li>Suma</li>
+          <li>Resta</li>
+          <li>Multiplicación</li>
+          <li>División</li>
+        </ol>
+        <input type="text" class="input_number" name="" id="operacion" placeholder="Digite la opción (número)" required>
+      </div>
+
+      <div id="container_number1" class="content_numbers">
+        <label for="numero1">primer digito:</label>
+        <input id="numero1" class="input_number" type="text" required>
+      </div>
+
+      <div id="container_number2" class="content_numbers">
+        <label for="numero2">segundo digito:</label>
+        <input id="numero2" class="input_number" type="text" required>
+      </div>
+
+      <button id="button_result" type="submit">
+        calcular
+      </button>
+    </form>
+
+    <div id="content__result">
+      <p id="result">
+        Resultado
+      </p>
+    </div>
+    <button id="button_clean" class="clean_button">
+      clean
+    </button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
